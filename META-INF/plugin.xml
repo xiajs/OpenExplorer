@@ -1,0 +1,45 @@
+<idea-plugin version="2">
+  <id>com.yourcompany.unique.plugin.id</id>
+  <name>Open Explorer</name>
+  <version>1.0</version>
+  <vendor email="xiajisong@gmail.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+  <description><![CDATA[
+      一个小工具帮助你从IDE编辑框右键直接打开编辑文件对应的目录。Eclipse下有这种小工具用的很习惯，IDEA下没找到就自己写了一个。<br>
+      <small>most HTML tags may be used</small>
+      ]]></description>
+
+  <change-notes><![CDATA[
+      初始发布.<br>
+      <small>most HTML tags may be used</small>
+      ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="107.105"/>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+      <action id="ID_OPEN_EXPLORER_ACTION" class="OpenExplorer" text="Open Explorer" description="Open Explorer ...">
+          <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+      </action>
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+</idea-plugin>
